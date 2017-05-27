@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.*;
+public class ejemplo_5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num1,num2;
+		double resul;
+	try{
+		System.out.println("ingrese numero entero");
+		num1 = sc.nextInt();
+		System.out.println("ingrese un segundo numero entero");
+		num2 = sc.nextInt();
+		resul = num1/num2;
+		System.out.println("el resultado de la divisionn es: "+resul);
+	}catch(InputMismatchException no_num){
+		System.out.println("se introdujo un valor que no es un numero");
+	}
+	catch(ArithmeticException cero){
+		System.out.println("no se puede dividir entre cero.");
+	}
+	}
+
+}
