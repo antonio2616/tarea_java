@@ -1,0 +1,18 @@
+import java.util.*;
+public class ejemplo_1 {
+
+	public static void main(String[] args) {
+		int[]array=new int[15];
+		try{
+			array[1]=5;
+			array[-2]=4;
+			array[5]=14;
+		}
+		catch(ArrayIndexOutOfBoundsException excepcion){
+			System.out.println("Error de índice en un array");
+	}finally{
+		System.out.println("programa finalizado.... gracias");
+	}
+	}
+
+}
