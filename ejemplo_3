@@ -1,0 +1,24 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+public class ejemplo_3 {
+
+	public static void main(String[] args) {
+		Scanner ed = new Scanner(System.in);
+		int edad;
+		try{
+		System.out.println("introduzca su edad");
+		edad = ed.nextInt();
+		if(edad>=18){
+		System.out.println("usted es mayor de edad: "+edad);
+		}else{
+		System.out.println("usted es menor de edad: "+edad);
+
+		}
+		}catch(InputMismatchException vl){
+			System.out.println("no es un valor numerico");
+			
+		}
+
+	}
+
+}
